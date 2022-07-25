@@ -1,0 +1,207 @@
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: white;
+  width: 72%;
+  margin: 0 auto;
+  border: 3px solid #664e30;
+  padding: 2em 1em 2em 1em;
+  height: auto;
+}
+h1 {
+  font-size: 150%;
+  color: #664e30;
+  margin-bottom: 0.5em;
+}
+label {
+  float: left;
+  width: 8em;
+  margin-bottom: 5px;
+}
+input,
+select {
+  width: 10em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+input[type="checkbox"] {
+  width: 2em;
+}
+header p {
+  margin: 0 2em 1em 0;
+}
+#player,
+#high_score,
+#correct {
+  float: left;
+}
+
+#cards img {
+  height: 100px;
+  width: 80px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  float: left;
+}
+.clear {
+  clear: both;
+}
+
+#boxcard {
+  z-index: 1;
+  margin: 10px 0 0;
+}
+#boxcard a {
+  float: left;
+  width: 100px;
+  height: 138px;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  background-image: url("./images/back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+#boxcard a img {
+  display: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 139px;
+  z-index: 3;
+}
+#boxbuttons {
+  text-align: center;
+  margin: 20px;
+  display: block;
+}
+#boxbuttons .button {
+  text-transform: uppercase;
+  background: #664e30;
+  padding: 11px 28px;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+#boxbuttons .button:hover {
+  background: #999;
+}
+
+/* Custom CSS */
+.ui-widget.ui-widget-content {
+  height: auto;
+}
+#boxbuttons .button .ui-widget-content a {
+  color: white;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-activ {
+  background-color: #d78521;
+  border: #d78521;
+}
+#new_game {
+  float: right;
+  margin-top: 3px;
+}
+h1 {
+  float: left;
+  color: #664e30;
+  text-decoration: none;
+}
+#newgame {
+  color: #312414;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid #312414;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+legend {
+  font-size: 25px;
+  text-align: center;
+}
+fieldset {
+  padding: 30px 72px;
+}
+fieldset li {
+  margin-bottom: 13px;
+}
+#player_name,
+#num_cards {
+  padding: 8px 34px 8px 8px;
+  width: 260px;
+}
+#num_cards {
+  width: 306px;
+}
+#save_settings {
+  background-color: #664e30;
+  color: white;
+  border-radius: 5px;
+  padding: 12px;
+  border: none;
+}
+
+.ui-tabs .ui-tabs-nav {
+  padding-left: 33%;
+}
+
+#tabs-3 {
+  margin: auto;
+  margin-top: 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  width: 100%;
+  justify-items: center;
+}
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  justify-self: center;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 375px) and (max-width: 767.98px) {
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr) !important;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .grid-container {
+    grid-template-columns: repeat(8, 1fr) !important;
+  }
+}
+
+#boxbuttons {
+  justify-items: center;
+}
