@@ -2,7 +2,7 @@ body {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 100%;
   background-color: white;
-  width: 72%;
+  width: auto;
   margin: 0 auto;
   border: 3px solid #664e30;
   padding: 2em 1em 2em 1em;
