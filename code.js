@@ -165,7 +165,7 @@ $(document).ready(function () {
       for (const [index, item] of images.entries()) {
         var imagename = item.replace(/^.*[\\\/]/, "");
         $(Source).append(
-          "<a href='#' class='grid-item' id=card" +
+          "<a href='javascript:void(0)' class='grid-item' id=card" +
             y +
             index +
             "><img src=" +
